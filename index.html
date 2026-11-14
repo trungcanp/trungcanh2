@@ -1,1 +1,992 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển Dụng & Chính Sách Lương | ASM Phạm Trung Cần - taichinhh2</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            margin: 0;
+            padding: 0;
+        }
+        .gradient-hero {
+            background: radial-gradient(circle at 85% 15%, rgba(220, 38, 38, 0.08) 0%, rgba(255, 255, 255, 0) 50%),
+                        radial-gradient(circle at 15% 85%, rgba(3, 105, 161, 0.1) 0%, rgba(255, 255, 255, 0) 55%);
+        }
+        .hover-lift {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px -8px rgba(15, 23, 42, 0.12);
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-red-600 selection:text-white">
+
+    <!-- Top Bar: Red & Blue Theme -->
+    <div class="bg-gradient-to-r from-blue-900 via-red-700 to-blue-900 text-white text-xs sm:text-sm font-semibold py-2 px-3 text-center shadow-sm flex items-center justify-center gap-2">
+        <span class="inline-flex items-center gap-1 bg-white text-red-700 rounded-full px-2.5 py-0.5 text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider shrink-0">
+            <i class="fa-solid fa-fire text-red-600"></i> T11/2026
+        </span>
+        <span class="truncate">
+            Nhánh ASM Phạm Trung Cần • Đạt 6 Loan xét ký HĐLĐ Lương CB 8.000.000đ • Thanh toán hoa hồng ngay sau giải ngân
+        </span>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+        <div class="max-w-6xl mx-auto px-3 sm:px-6 py-3 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2.5 min-w-0">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-800 to-red-600 text-white flex items-center justify-center font-extrabold text-sm shadow-sm shrink-0">
+                    ASM
+                </div>
+                <div class="min-w-0">
+                    <div class="font-extrabold text-slate-900 text-sm sm:text-base leading-tight flex items-center gap-1.5 truncate">
+                        <span class="truncate">ASM Phạm Trung Cần</span>
+                        <span class="text-[10px] bg-red-50 text-red-700 border border-red-200 font-bold px-1.5 py-0.5 rounded shrink-0">Quản Lý Khu Vực</span>
+                    </div>
+                    <div class="text-[11px] text-slate-500 truncate">Cần Thơ & Vùng Mekong • Hệ thống taichinhh2</div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 shrink-0">
+                <a href="#bang-tinh" class="hidden md:inline-flex items-center gap-1 px-3 py-1.5 rounded-xl text-slate-700 hover:text-red-600 text-xs font-bold transition-colors">
+                    Tính Thu Nhập
+                </a>
+                <a href="#du-an" class="hidden md:inline-flex items-center gap-1 px-3 py-1.5 rounded-xl text-slate-700 hover:text-blue-700 text-xs font-bold transition-colors">
+                    Biểu Phí 10 Dự Án
+                </a>
+                <a href="https://zalo.me/0903101248" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-800 text-xs font-bold transition-all">
+                    <i class="fa-solid fa-phone-volume text-red-600"></i>
+                    <span>0903 101 248</span>
+                </a>
+                <a href="#ung-tuyen" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs font-bold shadow-sm transition-all">
+                    Ứng Tuyển
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section (Phương Án B: Đưa Bảng Tính Doanh Số Đa Dự Án Lên Đầu Trang) -->
+    <section id="bang-tinh" class="pt-6 pb-14 gradient-hero border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-3 sm:px-6 space-y-6">
+            
+            <!-- Compact Hero Intro -->
+            <div class="text-center max-w-3xl mx-auto space-y-2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-xs font-bold">
+                    <span class="w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
+                    Tuyển Dụng Trực Tiếp Nhánh ASM Phạm Trung Cần
+                </div>
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    Công Cụ Tính Doanh Số Quy Đổi Loan & Thu Nhập Thực Nhận
+                </h1>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Nhập thử doanh số các dự án bạn dự kiến chạy trong tháng (ví dụ: <strong>120tr FE = 3 Loan</strong> + <strong>100tr Tin Vay = 2 Loan</strong> + <strong>9tr Bảo hiểm = 3 Loan</strong>) để xem tổng số Loan quy đổi và đối chiếu thu nhập giữa <strong>CTV</strong> & <strong>Nhân viên chính thức (HĐLĐ)</strong>.
+                </p>
+            </div>
+
+            <!-- Multi-Project Calculator Box -->
+            <div class="bg-white rounded-3xl shadow-xl border-2 border-blue-900/10 overflow-hidden">
+                
+                <!-- Top Bar: Mode Switcher -->
+                <div class="bg-gradient-to-r from-blue-950 via-blue-900 to-slate-900 p-4 sm:p-6 text-white flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+                    <div>
+                        <div class="text-[11px] font-bold uppercase tracking-wider text-red-400">Bước 1: Chọn Chế Độ Nhân Sự Của Bạn</div>
+                        <div class="text-sm sm:text-base font-bold text-white mt-0.5">So sánh quyền lợi Chưa ký HĐLĐ và Đã ký HĐLĐ (Lương CB 8 Triệu)</div>
+                    </div>
+
+                    <!-- Mode Toggle Buttons -->
+                    <div class="grid grid-cols-2 gap-2 bg-slate-950/60 p-1.5 rounded-2xl border border-white/10 shrink-0">
+                        <button type="button" id="btn-mode-ctv" onclick="setMode('ctv')" class="px-3.5 py-2.5 rounded-xl text-xs font-extrabold transition-all bg-red-600 text-white shadow-sm flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-bolt"></i> Chưa Ký HĐLĐ (CTV)
+                        </button>
+                        <button type="button" id="btn-mode-hdld" onclick="setMode('hdld')" class="px-3.5 py-2.5 rounded-xl text-xs font-extrabold transition-all text-slate-300 hover:text-white flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-file-contract"></i> Đã Ký HĐLĐ (Lương 8Tr)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Sample Scenarios Bar -->
+                <div class="bg-slate-100 px-4 sm:px-6 py-2.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs">
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        <span class="font-bold text-slate-700"><i class="fa-solid fa-wand-magic-sparkles text-red-600 mr-1"></i>Ví dụ mẫu nhanh:</span>
+                        <button type="button" onclick="applySample(1)" class="px-2.5 py-1 rounded-lg bg-white hover:bg-red-50 border border-slate-300 text-slate-800 font-semibold transition">
+                            Mẫu 8 Loan (120tr FE + 100tr Tin Vay + 9tr BH)
+                        </button>
+                        <button type="button" onclick="applySample(2)" class="px-2.5 py-1 rounded-lg bg-white hover:bg-blue-50 border border-slate-300 text-slate-800 font-semibold transition">
+                            Mẫu Chuẩn 6 Loan (100tr SHBFC + 80tr FE)
+                        </button>
+                        <button type="button" onclick="applySample(3)" class="px-2.5 py-1 rounded-lg bg-white hover:bg-blue-50 border border-slate-300 text-slate-800 font-semibold transition">
+                            Mẫu Top Sales 15 Loan
+                        </button>
+                    </div>
+                    <button type="button" onclick="resetInputs()" class="text-red-600 hover:text-red-700 font-bold underline">
+                        <i class="fa-solid fa-rotate-left"></i> Đặt lại về 0
+                    </button>
+                </div>
+
+                <!-- Calculator Body: Left (Inputs) & Right (Live Result) -->
+                <div class="p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                    
+                    <!-- Left Column: Multi-Project Volume Inputs (7 Cols) -->
+                    <div class="lg:col-span-7 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-blue-900">
+                                Bước 2: Nhập Doanh Số Các Dự Án Trong Tháng
+                            </span>
+                            <span class="text-[11px] text-slate-500">Tự động quy đổi ra số Loan & Hoa hồng</span>
+                        </div>
+
+                        <!-- Main Projects List -->
+                        <div class="space-y-2.5">
+                            
+                            <!-- 1. FE Credit (VPBank SMBC) -->
+                            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition-colors grid grid-cols-12 gap-2 items-center">
+                                <div class="col-span-5 sm:col-span-5">
+                                    <div class="font-bold text-slate-900 text-xs sm:text-sm">1. FE Credit (SMBC)</div>
+                                    <div class="text-[11px] text-slate-500">Định mức: <strong>40tr = 1 Loan</strong> (2.5% - 2.7%)</div>
+                                </div>
+                                <div class="col-span-4 sm:col-span-4">
+                                    <div class="relative flex items-center">
+                                        <input type="number" id="in-fe" min="0" step="10" value="120" oninput="calculateAll()" class="w-full pl-2.5 pr-10 py-1.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm focus:outline-none focus:border-red-600">
+                                        <span class="absolute right-2.5 text-[11px] font-bold text-slate-400">Triệu</span>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 sm:col-span-3 text-right">
+                                    <div class="text-xs sm:text-sm font-extrabold text-blue-700" id="loan-fe">3.0 Loan</div>
+                                    <div class="text-[11px] font-semibold text-slate-500" id="comm-fe">3.000.000đ</div>
+                                </div>
+                            </div>
+
+                            <!-- 2. Tin Vay / TNEX -->
+                            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition-colors grid grid-cols-12 gap-2 items-center">
+                                <div class="col-span-5 sm:col-span-5">
+                                    <div class="font-bold text-slate-900 text-xs sm:text-sm flex items-center gap-1 flex-wrap">
+                                        <span>2. Tin Vay / TNEX</span>
+                                        <select id="rate-tinvay" onchange="calculateAll()" class="text-[10px] bg-white border border-slate-300 rounded px-1 py-0.5 font-semibold text-blue-800">
+                                            <option value="0.016">1.6% (Low/TNEX)</option>
+                                            <option value="0.013">1.3% (Medium)</option>
+                                            <option value="0.01">1.0% (High)</option>
+                                        </select>
+                                    </div>
+                                    <div class="text-[11px] text-slate-500">Định mức: <strong>50tr = 1 Loan</strong></div>
+                                </div>
+                                <div class="col-span-4 sm:col-span-4">
+                                    <div class="relative flex items-center">
+                                        <input type="number" id="in-tinvay" min="0" step="10" value="100" oninput="calculateAll()" class="w-full pl-2.5 pr-10 py-1.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm focus:outline-none focus:border-red-600">
+                                        <span class="absolute right-2.5 text-[11px] font-bold text-slate-400">Triệu</span>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 sm:col-span-3 text-right">
+                                    <div class="text-xs sm:text-sm font-extrabold text-blue-700" id="loan-tinvay">2.0 Loan</div>
+                                    <div class="text-[11px] font-semibold text-slate-500" id="comm-tinvay">1.600.000đ</div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Bảo Hiểm -->
+                            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition-colors grid grid-cols-12 gap-2 items-center">
+                                <div class="col-span-5 sm:col-span-5">
+                                    <div class="font-bold text-slate-900 text-xs sm:text-sm">3. Dự Án Bảo Hiểm</div>
+                                    <div class="text-[11px] text-slate-500">Định mức: <strong>3tr phí = 1 Loan</strong> (45%)</div>
+                                </div>
+                                <div class="col-span-4 sm:col-span-4">
+                                    <div class="relative flex items-center">
+                                        <input type="number" id="in-bh" min="0" step="1" value="9" oninput="calculateAll()" class="w-full pl-2.5 pr-10 py-1.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm focus:outline-none focus:border-red-600">
+                                        <span class="absolute right-2.5 text-[11px] font-bold text-slate-400">Triệu</span>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 sm:col-span-3 text-right">
+                                    <div class="text-xs sm:text-sm font-extrabold text-blue-700" id="loan-bh">3.0 Loan</div>
+                                    <div class="text-[11px] font-semibold text-slate-500" id="comm-bh">4.050.000đ</div>
+                                </div>
+                            </div>
+
+                            <!-- 4. SHB Finance -->
+                            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition-colors grid grid-cols-12 gap-2 items-center">
+                                <div class="col-span-5 sm:col-span-5">
+                                    <div class="font-bold text-slate-900 text-xs sm:text-sm">4. SHB Finance (SHBFC)</div>
+                                    <div class="text-[11px] text-slate-500">Định mức: <strong>25tr = 1 Loan</strong> (3.2% - 5.5%)</div>
+                                </div>
+                                <div class="col-span-4 sm:col-span-4">
+                                    <div class="relative flex items-center">
+                                        <input type="number" id="in-shb" min="0" step="25" value="0" oninput="calculateAll()" class="w-full pl-2.5 pr-10 py-1.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm focus:outline-none focus:border-red-600">
+                                        <span class="absolute right-2.5 text-[11px] font-bold text-slate-400">Triệu</span>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 sm:col-span-3 text-right">
+                                    <div class="text-xs sm:text-sm font-extrabold text-blue-700" id="loan-shb">0.0 Loan</div>
+                                    <div class="text-[11px] font-semibold text-slate-500" id="comm-shb">0đ</div>
+                                </div>
+                            </div>
+
+                            <!-- 5. Lotte / Shinhan Finance -->
+                            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition-colors grid grid-cols-12 gap-2 items-center">
+                                <div class="col-span-5 sm:col-span-5">
+                                    <div class="font-bold text-slate-900 text-xs sm:text-sm">5. Lotte / Shinhan</div>
+                                    <div class="text-[11px] text-slate-500">Định mức: <strong>25tr = 1 Loan</strong> (3.2% - 3.5%)</div>
+                                </div>
+                                <div class="col-span-4 sm:col-span-4">
+                                    <div class="relative flex items-center">
+                                        <input type="number" id="in-lotte" min="0" step="25" value="0" oninput="calculateAll()" class="w-full pl-2.5 pr-10 py-1.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm focus:outline-none focus:border-red-600">
+                                        <span class="absolute right-2.5 text-[11px] font-bold text-slate-400">Triệu</span>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 sm:col-span-3 text-right">
+                                    <div class="text-xs sm:text-sm font-extrabold text-blue-700" id="loan-lotte">0.0 Loan</div>
+                                    <div class="text-[11px] font-semibold text-slate-500" id="comm-lotte">0đ</div>
+                                </div>
+                            </div>
+
+                            <!-- Expandable More Projects (VIB, VPBank, Cathay) -->
+                            <div id="more-projects" class="hidden space-y-2.5 pt-1">
+                                <!-- 6. VIB UPL -->
+                                <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 grid grid-cols-12 gap-2 items-center">
+                                    <div class="col-span-5">
+                                        <div class="font-bold text-slate-900 text-xs sm:text-sm">6. VIB Vay UPL</div>
+                                        <div class="text-[11px] text-slate-500">Định mức: <strong>55tr = 1 Loan</strong> (1.6%)</div>
+                                    </div>
+                                    <div class="col-span-4">
+                                        <div class="relative flex items-center">
+                                            <input type="number" id="in-vibupl" min="0" step="10" value="0" oninput="calculateAll()" class="w-full pl-2.5 pr-10 py-1.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm">
+                                            <span class="absolute right-2.5 text-[11px] font-bold text-slate-400">Triệu</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-3 text-right">
+                                        <div class="text-xs sm:text-sm font-extrabold text-blue-700" id="loan-vibupl">0.0 Loan</div>
+                                        <div class="text-[11px] font-semibold text-slate-500" id="comm-vibupl">0đ</div>
+                                    </div>
+                                </div>
+
+                                <!-- 7. VPBank UPL -->
+                                <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 grid grid-cols-12 gap-2 items-center">
+                                    <div class="col-span-5">
+                                        <div class="font-bold text-slate-900 text-xs sm:text-sm">7. VPBank UPL-100</div>
+                                        <div class="text-[11px] text-slate-500">Định mức: <strong>100tr = 1 Loan</strong> (1.8%)</div>
+                                    </div>
+                                    <div class="col-span-4">
+                                        <div class="relative flex items-center">
+                                            <input type="number" id="in-vpbupl" min="0" step="50" value="0" oninput="calculateAll()" class="w-full pl-2.5 pr-10 py-1.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm">
+                                            <span class="absolute right-2.5 text-[11px] font-bold text-slate-400">Triệu</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-3 text-right">
+                                        <div class="text-xs sm:text-sm font-extrabold text-blue-700" id="loan-vpbupl">0.0 Loan</div>
+                                        <div class="text-[11px] font-semibold text-slate-500" id="comm-vpbupl">0đ</div>
+                                    </div>
+                                </div>
+
+                                <!-- 8. Thẻ VIB One Card -->
+                                <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 grid grid-cols-12 gap-2 items-center">
+                                    <div class="col-span-5">
+                                        <div class="font-bold text-slate-900 text-xs sm:text-sm">8. Thẻ VIB One Card</div>
+                                        <div class="text-[11px] text-slate-500"><strong>10 Thẻ = 1 Loan</strong> (950k/thẻ)</div>
+                                    </div>
+                                    <div class="col-span-4">
+                                        <div class="relative flex items-center">
+                                            <input type="number" id="in-vibcard" min="0" step="1" value="0" oninput="calculateAll()" class="w-full pl-2.5 pr-10 py-1.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm">
+                                            <span class="absolute right-2.5 text-[11px] font-bold text-slate-400">Thẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-3 text-right">
+                                        <div class="text-xs sm:text-sm font-extrabold text-blue-700" id="loan-vibcard">0.0 Loan</div>
+                                        <div class="text-[11px] font-semibold text-slate-500" id="comm-vibcard">0đ</div>
+                                    </div>
+                                </div>
+
+                                <!-- 9. Thẻ VPBank & HĐ Cathay -->
+                                <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 grid grid-cols-12 gap-2 items-center">
+                                    <div class="col-span-5">
+                                        <div class="font-bold text-slate-900 text-xs sm:text-sm">9. Thẻ VPBank / Cathay</div>
+                                        <div class="text-[11px] text-slate-500"><strong>10 Thẻ (HĐ) = 1 Loan</strong> (355k/275k)</div>
+                                    </div>
+                                    <div class="col-span-4">
+                                        <div class="relative flex items-center">
+                                            <input type="number" id="in-vpbcard" min="0" step="1" value="0" oninput="calculateAll()" class="w-full pl-2.5 pr-10 py-1.5 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm">
+                                            <span class="absolute right-2.5 text-[11px] font-bold text-slate-400">Thẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-3 text-right">
+                                        <div class="text-xs sm:text-sm font-extrabold text-blue-700" id="loan-vpbcard">0.0 Loan</div>
+                                        <div class="text-[11px] font-semibold text-slate-500" id="comm-vpbcard">0đ</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Toggle More Projects Button -->
+                            <button type="button" onclick="toggleMoreProjects()" id="btn-more-proj" class="w-full py-2 rounded-xl border border-dashed border-blue-400 text-blue-700 hover:bg-blue-50 text-xs font-bold transition">
+                                <i class="fa-solid fa-plus-circle mr-1"></i> Mở thêm dự án khác (VIB, VPBank, Thẻ tín dụng, Cathay...)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Summary & Final Payout (5 Cols) -->
+                    <div class="lg:col-span-5 bg-slate-900 text-white rounded-3xl p-5 sm:p-6 space-y-4 border border-slate-800 shadow-lg">
+                        
+                        <!-- Total Loan Badge -->
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-3.5">
+                            <div>
+                                <div class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Tổng Loan Quy Đổi</div>
+                                <div class="text-xs text-sky-400 font-semibold mt-0.5" id="status-contract-badge">
+                                    Đủ chuẩn xét ký HĐLĐ (>= 6 Loan)
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-3xl sm:text-4xl font-extrabold text-amber-400 font-mono" id="total-loans-num">8.0</span>
+                                <span class="text-xs font-bold text-slate-300 block">Loan trong tháng</span>
+                            </div>
+                        </div>
+
+                        <!-- Breakdown Box -->
+                        <div class="space-y-2.5 text-xs">
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-800/90 border border-slate-700">
+                                <div>
+                                    <div class="font-bold text-slate-200">1. Lương Cơ Bản HĐLĐ</div>
+                                    <div class="text-[11px] text-slate-400" id="note-base-salary">Định mức 6 Loan đầu tiên</div>
+                                </div>
+                                <div class="text-base font-extrabold text-white font-mono" id="out-base-salary">0 đ</div>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-800/90 border border-slate-700">
+                                <div>
+                                    <div class="font-bold text-slate-200" id="label-comm-title">2. Hoa Hồng Dự Án</div>
+                                    <div class="text-[11px] text-slate-400" id="note-comm-detail">Hưởng 100% theo biểu phí</div>
+                                </div>
+                                <div class="text-base font-extrabold text-emerald-400 font-mono" id="out-commission">8.650.000 đ</div>
+                            </div>
+
+                            <!-- Seniority Checkbox inside result -->
+                            <div class="p-3 rounded-xl bg-slate-800/60 border border-slate-700/80 flex items-center justify-between">
+                                <label class="inline-flex items-center gap-2 cursor-pointer text-[11px] font-semibold text-slate-300">
+                                    <input type="checkbox" id="chk-seniority" onchange="calculateAll()" class="w-4 h-4 rounded accent-red-600">
+                                    <span>Đủ 6 tháng HĐLĐ (+2Tr Thâm niên)</span>
+                                </label>
+                                <span class="font-bold text-sky-400 font-mono" id="out-seniority">0 đ</span>
+                            </div>
+                        </div>
+
+                        <!-- Explanation of Cách 1 Deduction -->
+                        <div class="p-3 rounded-xl bg-blue-950/80 border border-blue-700/50 text-[11px] text-blue-200 leading-relaxed" id="deduction-explanation">
+                            <!-- Injected by JS -->
+                        </div>
+
+                        <!-- Final Total Box -->
+                        <div class="p-4 rounded-2xl bg-gradient-to-r from-red-700 via-red-600 to-blue-800 text-white shadow-md">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[11px] font-extrabold uppercase tracking-wider text-red-100">Tổng Thu Nhập Dự Kiến</span>
+                                <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-bold" id="mode-tag-label">Chế độ CTV</span>
+                            </div>
+                            <div class="text-2xl sm:text-3xl font-extrabold mt-1 font-mono" id="out-total-income">
+                                8.650.000 đ
+                            </div>
+                            <div class="text-[11px] text-red-100 mt-1" id="perks-line">
+                                Thanh toán ngay sau khi giải ngân thành công.
+                            </div>
+                        </div>
+
+                        <!-- Alternative Mode Comparison -->
+                        <div class="p-3 rounded-xl bg-slate-800 border border-slate-700 text-[11px] flex items-center justify-between">
+                            <span class="text-slate-300" id="compare-text">Nếu ở chế độ Đã ký HĐLĐ (Lương 8Tr):</span>
+                            <button type="button" onclick="toggleOtherMode()" class="font-extrabold text-amber-400 underline ml-2 shrink-0" id="compare-val">
+                                Xem ngay
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Mandatory Disclaimer -->
+                <div class="bg-red-50 px-4 sm:px-6 py-3 border-t border-red-200 text-[11px] sm:text-xs text-red-900 flex items-start sm:items-center gap-2">
+                    <i class="fa-solid fa-circle-exclamation text-red-600 mt-0.5 sm:mt-0 shrink-0"></i>
+                    <span>
+                        <strong>Lưu ý quan trọng:</strong> Bảng tính trên chỉ mang tính chất <strong>tham khảo</strong> giúp nhân sự dễ hình dung cách quy đổi Loan. Mức chi trả thực tế còn tuỳ thuộc vào nghiệm thu từng hồ sơ và <strong>chính sách áp dụng từng thời kỳ</strong>.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Salary Rules Section -->
+    <section class="py-12 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-3 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <span class="text-xs font-extrabold text-red-600 uppercase tracking-wider bg-red-50 px-3 py-1 rounded-full border border-red-200">
+                    Cơ Chế Cốt Lõi
+                </span>
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">
+                    3 Quy Tắc Lương & Hợp Đồng Lao Động Cần Nhớ
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-red-600 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-extrabold uppercase text-red-600">1. Chưa Ký HĐLĐ (CTV)</span>
+                        <i class="fa-solid fa-money-bill-wave text-red-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Làm Nhiêu Hưởng Nhiêu • Trả Ngay</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Hưởng <strong>100% hoa hồng</strong> theo bảng phí dự án ngay sau khi giải ngân thành công. Khi tích lũy đủ <strong>6 Loan trong 1 tháng</strong> sẽ được ASM Phạm Trung Cần đề xuất xét ký HĐLĐ chính thức.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-700 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-extrabold uppercase text-blue-700">2. Đã Ký HĐLĐ Chính Thức</span>
+                        <i class="fa-solid fa-file-shield text-blue-700"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">6 Loan Đầu = Lương CB 8.000.000đ</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Đạt đúng <strong>6 Loan định mức</strong>: Nhận <strong>8.000.000đ Lương cơ bản</strong> (không có thưởng/hoa hồng thêm cho 6 Loan này). Nếu chạy <strong>trên 6 Loan</strong>: Nhận <strong>8.000.000đ</strong> + <strong>Hoa hồng của các Loan vượt</strong> theo bảng chính sách.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-red-600 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-extrabold uppercase text-red-600">3. Phúc Lợi & Chạy Bù</span>
+                        <i class="fa-solid fa-award text-red-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">BHXH 21.5% • Thâm Niên • Chuyển Ngang</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        • Đạt 4–5 Loan: Nhận trước 70% lương CB (5.6Tr), 30% nhận tháng sau khi chạy bù. Dưới 4 Loan cắt HĐLĐ.<br>
+                        • Có HĐLĐ công ty cũ được xét <strong>ký HĐLĐ tương đương ngay</strong>.<br>
+                        • Đóng BHXH đầy đủ (miễn khấu trừ thuế TNCN), Lương T13 (8Tr), Thâm niên +2Tr (sau 6 tháng).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact 10 Projects Table & Cards -->
+    <section id="du-an" class="py-12 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-3 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+                    Biểu Phí Áp Dụng Từ 01/11/2026
+                </span>
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">
+                    Tóm Tắt 10 Dự Án Tài Chính – Thẻ – Bảo Hiểm
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <!-- 1. SHBFC -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 hover-lift">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-extrabold text-slate-900 text-sm">1. SHB Finance (SHBFC)</span>
+                        <span class="text-[11px] bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded">25Tr = 1 Loan</span>
+                    </div>
+                    <div class="text-xs text-slate-600 space-y-1">
+                        <div class="flex justify-between"><span>1–3 Loan: <strong>3.2%</strong></span><span>4–6 Loan: <strong>3.6%</strong></span></div>
+                        <div class="flex justify-between"><span>7–10 Loan: <strong>4.5%</strong></span><span>11–14 Loan: <strong>5.0%</strong></span></div>
+                        <div class="flex justify-between"><span>15–20 Loan: <strong>5.2%</strong></span><span class="text-red-600 font-bold">21+ Loan: 5.5%</span></div>
+                        <div class="text-[11px] text-slate-500 pt-1 border-t border-slate-100">
+                            • Telesales: 2.5%. Bắt buộc 100% có BH. Giữ rủi ro 20% (truy thu nếu tất toán/trễ 1 trong 4 kỳ đầu).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. VIB -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 hover-lift">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-extrabold text-slate-900 text-sm">2. Ngân Hàng VIB</span>
+                        <span class="text-[11px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">Vay & Thẻ</span>
+                    </div>
+                    <div class="text-xs text-slate-600 space-y-1">
+                        <div>• <strong>Vay UPL (55Tr = 1 Loan):</strong> Hoa hồng <strong class="text-red-600">1.6%</strong> tổng giải ngân (Giữ 20% rủi ro hoàn trả T+3 nếu trễ &le; 9 ngày).</div>
+                        <div>• <strong>Thẻ VIB One Card (10 thẻ = 1 Loan):</strong> <strong class="text-red-600">950.000đ/thẻ</strong> (Hạn mức &ge; 1Tr, kích hoạt thành công).</div>
+                    </div>
+                </div>
+
+                <!-- 3. VPBank -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 hover-lift">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-extrabold text-slate-900 text-sm">3. Ngân Hàng VPBank</span>
+                        <span class="text-[11px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">100Tr = 1 Loan</span>
+                    </div>
+                    <div class="text-xs text-slate-600 space-y-1">
+                        <div>• <strong>UPL-100 (Chưa CIF):</strong> <strong class="text-red-600">1.8%</strong> | <strong>Đã có CIF:</strong> <strong>1.6%</strong> (Không thanh lý sớm 4 kỳ đầu).</div>
+                        <div>• <strong>Thẻ tín dụng (10 thẻ = 1 Loan):</strong> <strong class="text-red-600">355.000đ/thẻ</strong> (Kích hoạt + có giao dịch).</div>
+                    </div>
+                </div>
+
+                <!-- 4. VPBank SMBC (FE Credit) -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 hover-lift">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-extrabold text-slate-900 text-sm">4. VPBank SMBC (FE)</span>
+                        <span class="text-[11px] bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded">40Tr = 1 Loan</span>
+                    </div>
+                    <div class="text-xs text-slate-600 space-y-1">
+                        <div class="flex justify-between"><span>1–8 HĐ: <strong class="text-red-600">2.5%</strong></span><span>Từ 9 HĐ: <strong class="text-red-600">2.7%</strong></span></div>
+                        <div class="text-[11px] text-slate-500 pt-1 border-t border-slate-100">
+                            • 100% có BH khoản vay. <strong>Không giữ rủi ro & quản lý DEL của Sales</strong>. Áp dụng cả Top Xcell.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Lotte & Shinhan -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 hover-lift">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-extrabold text-slate-900 text-sm">5 & 6. Lotte & Shinhan</span>
+                        <span class="text-[11px] bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded">25Tr = 1 Loan</span>
+                    </div>
+                    <div class="text-xs text-slate-600 space-y-1">
+                        <div class="flex justify-between"><span>1–4 HĐ: <strong class="text-red-600">3.2%</strong></span><span>Từ 5 HĐ: <strong class="text-red-600">3.5%</strong></span></div>
+                        <div class="text-[11px] text-slate-500 pt-1 border-t border-slate-100">
+                            • 100% tham gia BH. Tạm giữ 20% hoàn trả sau 2 kỳ (trễ &le; 10 ngày). Truy thu 100% nếu trễ 1 trong 2 kỳ đầu.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Tin Vay, TNEX, Bảo Hiểm, Cathay -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 hover-lift">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-extrabold text-slate-900 text-sm">7–10. Tin Vay, TNEX, BH, Cathay</span>
+                        <span class="text-[11px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">Tăng Loan Nhanh</span>
+                    </div>
+                    <div class="text-xs text-slate-600 space-y-1">
+                        <div>• <strong>Tin Vay (50Tr = 1 Loan):</strong> Low <strong>1.6%</strong>, Med <strong>1.3%</strong>, High <strong>1.0%</strong> (Không giữ rủi ro).</div>
+                        <div>• <strong>TNEX (50Tr = 1 Loan):</strong> <strong>1.6%</strong> (Có BH).</div>
+                        <div>• <strong>Bảo hiểm (3Tr = 1 Loan):</strong> Tổng <strong class="text-red-600">45%</strong> (20% + 20% + 5%).</div>
+                        <div>• <strong>Cathay:</strong> Giải ngân <strong>275k/HĐ</strong> (10 HĐ = 1 Loan) | Lên HT: 25k.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Registration Section -->
+    <section id="ung-tuyen" class="py-12 bg-blue-950 text-white">
+        <div class="max-w-3xl mx-auto px-3 sm:px-6">
+            <div class="text-center mb-6">
+                <span class="px-3 py-1 rounded-full bg-red-600 text-white text-xs font-bold uppercase tracking-wider">
+                    Gia Nhập Đội Ngũ
+                </span>
+                <h2 class="text-xl sm:text-2xl font-extrabold mt-2">Đăng Ký Ứng Tuyển Trực Tiếp Với ASM Phạm Trung Cần</h2>
+                <p class="text-slate-300 text-xs mt-1">
+                    Hỗ trợ cấp code dự án nhanh chóng, hướng dẫn nghiệp vụ và thủ tục ký HĐLĐ.
+                </p>
+            </div>
+
+            <div class="bg-white text-slate-800 rounded-3xl p-5 sm:p-7 shadow-xl">
+                <form id="recruitment-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Họ và Tên *</label>
+                            <input type="text" id="cand-name" required placeholder="Nguyễn Văn A" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-red-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Số Điện Thoại (Zalo) *</label>
+                            <input type="tel" id="cand-phone" required pattern="[0-9]{10}" placeholder="0901234567" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-red-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Tỉnh / Thành Phố *</label>
+                            <input type="text" id="cand-location" required placeholder="Cần Thơ, Vĩnh Long, An Giang..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-red-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Hình Thức Ứng Tuyển</label>
+                            <select id="cand-mode" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-red-600">
+                                <option value="Đăng ký CTV (Hưởng 100% hoa hồng, đủ 6 Loan ký HĐLĐ)">Đăng ký CTV (Đủ 6 Loan ký HĐLĐ 8Tr)</option>
+                                <option value="Chuyển ngang HĐLĐ từ công ty tài chính cũ sang">Chuyển ngang HĐLĐ từ công ty cũ sang</option>
+                                <option value="Ứng tuyển Nhân viên chính thức / Telesales">Ứng tuyển Nhân viên chính thức / Telesales</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-3.5 rounded-xl font-extrabold text-sm bg-gradient-to-r from-red-600 to-blue-800 hover:from-red-700 hover:to-blue-900 text-white shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Gửi Thông Tin Cho ASM Phạm Trung Cần Qua Zalo
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Zalo -->
+    <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/75 backdrop-blur-sm hidden p-4">
+        <div class="bg-white rounded-3xl p-6 max-w-md w-full text-center shadow-2xl space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center text-xl mx-auto">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div>
+                <h3 class="text-lg font-extrabold text-slate-900">Đã Sao Chép Hồ Sơ Ứng Tuyển!</h3>
+                <p class="text-xs text-slate-600 mt-1">
+                    Thông tin của <strong id="modal-candidate-name"></strong> đã được sao chép. Hãy bấm nút bên dưới để mở Zalo và dán (Paste) gửi cho ASM Phạm Trung Cần.
+                </p>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 text-left text-xs text-slate-700 space-y-1" id="modal-msg-preview"></div>
+            <div class="flex flex-col gap-2">
+                <a href="https://zalo.me/0903101248" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs sm:text-sm shadow-md flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-comment-dots"></i> Mở Zalo ASM Phạm Trung Cần (0903 101 248)
+                </a>
+                <button type="button" onclick="closeSuccessModal()" class="w-full py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs">
+                    Đóng
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 text-xs py-8 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-3 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <div class="font-bold text-white">ASM Phạm Trung Cần • Quản Lý Khu Vực</div>
+                <div class="text-[11px] text-slate-500 mt-0.5">Hệ thống taichinhh2 • Hotline/Zalo: 0903 101 248</div>
+            </div>
+            <div class="text-[11px] text-slate-500 text-center sm:text-right">
+                Lưu ý: Các tính toán thu nhập mang tính chất tham khảo và phụ thuộc vào chính sách từng thời kỳ.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentMode = 'ctv'; // 'ctv' or 'hdld'
+
+        function formatVND(amount) {
+            return new Intl.NumberFormat('vi-VN').format(Math.round(amount)) + ' đ';
+        }
+
+        function setMode(mode) {
+            currentMode = mode;
+            const btnCtv = document.getElementById('btn-mode-ctv');
+            const btnHdld = document.getElementById('btn-mode-hdld');
+
+            if (mode === 'ctv') {
+                btnCtv.className = "px-3.5 py-2.5 rounded-xl text-xs font-extrabold transition-all bg-red-600 text-white shadow-sm flex items-center justify-center gap-1.5";
+                btnHdld.className = "px-3.5 py-2.5 rounded-xl text-xs font-extrabold transition-all text-slate-300 hover:text-white flex items-center justify-center gap-1.5";
+            } else {
+                btnHdld.className = "px-3.5 py-2.5 rounded-xl text-xs font-extrabold transition-all bg-blue-600 text-white shadow-sm flex items-center justify-center gap-1.5";
+                btnCtv.className = "px-3.5 py-2.5 rounded-xl text-xs font-extrabold transition-all text-slate-300 hover:text-white flex items-center justify-center gap-1.5";
+            }
+            calculateAll();
+        }
+
+        function toggleOtherMode() {
+            setMode(currentMode === 'ctv' ? 'hdld' : 'ctv');
+        }
+
+        function toggleMoreProjects() {
+            const box = document.getElementById('more-projects');
+            const btn = document.getElementById('btn-more-proj');
+            if (box.classList.contains('hidden')) {
+                box.classList.remove('hidden');
+                btn.innerHTML = '<i class="fa-solid fa-minus-circle mr-1"></i> Thu gọn danh sách dự án phụ';
+            } else {
+                box.classList.add('hidden');
+                btn.innerHTML = '<i class="fa-solid fa-plus-circle mr-1"></i> Mở thêm dự án khác (VIB, VPBank, Thẻ tín dụng, Cathay...)';
+            }
+        }
+
+        function applySample(type) {
+            resetInputs(false);
+            if (type === 1) {
+                document.getElementById('in-fe').value = 120;
+                document.getElementById('in-tinvay').value = 100;
+                document.getElementById('in-bh').value = 9;
+            } else if (type === 2) {
+                document.getElementById('in-shb').value = 100;
+                document.getElementById('in-fe').value = 80;
+            } else if (type === 3) {
+                document.getElementById('in-shb').value = 250;
+                document.getElementById('in-fe').value = 120;
+                document.getElementById('in-bh').value = 6;
+            }
+            calculateAll();
+        }
+
+        function resetInputs(recalc = true) {
+            const ids = ['in-fe', 'in-tinvay', 'in-bh', 'in-shb', 'in-lotte', 'in-vibupl', 'in-vpbupl', 'in-vibcard', 'in-vpbcard'];
+            ids.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.value = 0;
+            });
+            if (recalc) calculateAll();
+        }
+
+        function computeProjectBreakdown() {
+            const items = [];
+
+            // 1. FE Credit (40tr = 1 loan, 1-8 HĐ: 2.5%, >=9: 2.7%)
+            const valFe = Math.max(0, Number(document.getElementById('in-fe').value) || 0);
+            const loanFe = valFe / 40;
+            const rateFe = loanFe >= 9 ? 0.027 : 0.025;
+            const commFe = valFe * 1000000 * rateFe;
+            document.getElementById('loan-fe').textContent = loanFe.toFixed(1) + ' Loan';
+            document.getElementById('comm-fe').textContent = formatVND(commFe);
+            if (loanFe > 0) items.push({ name: 'FE Credit', loans: loanFe, comm: commFe, commPerLoan: commFe / loanFe });
+
+            // 2. Tin Vay / TNEX (50tr = 1 loan)
+            const valTv = Math.max(0, Number(document.getElementById('in-tinvay').value) || 0);
+            const rateTv = Number(document.getElementById('rate-tinvay').value) || 0.016;
+            const loanTv = valTv / 50;
+            const commTv = valTv * 1000000 * rateTv;
+            document.getElementById('loan-tinvay').textContent = loanTv.toFixed(1) + ' Loan';
+            document.getElementById('comm-tinvay').textContent = formatVND(commTv);
+            if (loanTv > 0) items.push({ name: 'Tin Vay/TNEX', loans: loanTv, comm: commTv, commPerLoan: commTv / loanTv });
+
+            // 3. Bảo hiểm (3tr = 1 loan, 45%)
+            const valBh = Math.max(0, Number(document.getElementById('in-bh').value) || 0);
+            const loanBh = valBh / 3;
+            const commBh = valBh * 1000000 * 0.45;
+            document.getElementById('loan-bh').textContent = loanBh.toFixed(1) + ' Loan';
+            document.getElementById('comm-bh').textContent = formatVND(commBh);
+            if (loanBh > 0) items.push({ name: 'Bảo hiểm', loans: loanBh, comm: commBh, commPerLoan: commBh / loanBh });
+
+            // 4. SHBFC (25tr = 1 loan, bậc thang)
+            const valShb = Math.max(0, Number(document.getElementById('in-shb').value) || 0);
+            const loanShb = valShb / 25;
+            let rateShb = 0.032;
+            if (loanShb >= 21) rateShb = 0.055;
+            else if (loanShb >= 15) rateShb = 0.052;
+            else if (loanShb >= 11) rateShb = 0.050;
+            else if (loanShb >= 7) rateShb = 0.045;
+            else if (loanShb >= 4) rateShb = 0.036;
+            const commShb = valShb * 1000000 * rateShb;
+            document.getElementById('loan-shb').textContent = loanShb.toFixed(1) + ' Loan';
+            document.getElementById('comm-shb').textContent = formatVND(commShb);
+            if (loanShb > 0) items.push({ name: 'SHBFC', loans: loanShb, comm: commShb, commPerLoan: commShb / loanShb });
+
+            // 5. Lotte / Shinhan (25tr = 1 loan, 1-4: 3.2%, >=5: 3.5%)
+            const valLotte = Math.max(0, Number(document.getElementById('in-lotte').value) || 0);
+            const loanLotte = valLotte / 25;
+            const rateLotte = loanLotte >= 5 ? 0.035 : 0.032;
+            const commLotte = valLotte * 1000000 * rateLotte;
+            document.getElementById('loan-lotte').textContent = loanLotte.toFixed(1) + ' Loan';
+            document.getElementById('comm-lotte').textContent = formatVND(commLotte);
+            if (loanLotte > 0) items.push({ name: 'Lotte/Shinhan', loans: loanLotte, comm: commLotte, commPerLoan: commLotte / loanLotte });
+
+            // 6. VIB UPL (55tr = 1 loan, 1.6%)
+            const valVibUpl = Math.max(0, Number(document.getElementById('in-vibupl').value) || 0);
+            const loanVibUpl = valVibUpl / 55;
+            const commVibUpl = valVibUpl * 1000000 * 0.016;
+            document.getElementById('loan-vibupl').textContent = loanVibUpl.toFixed(1) + ' Loan';
+            document.getElementById('comm-vibupl').textContent = formatVND(commVibUpl);
+            if (loanVibUpl > 0) items.push({ name: 'VIB UPL', loans: loanVibUpl, comm: commVibUpl, commPerLoan: commVibUpl / loanVibUpl });
+
+            // 7. VPBank UPL (100tr = 1 loan, 1.8%)
+            const valVpbUpl = Math.max(0, Number(document.getElementById('in-vpbupl').value) || 0);
+            const loanVpbUpl = valVpbUpl / 100;
+            const commVpbUpl = valVpbUpl * 1000000 * 0.018;
+            document.getElementById('loan-vpbupl').textContent = loanVpbUpl.toFixed(1) + ' Loan';
+            document.getElementById('comm-vpbupl').textContent = formatVND(commVpbUpl);
+            if (loanVpbUpl > 0) items.push({ name: 'VPBank UPL', loans: loanVpbUpl, comm: commVpbUpl, commPerLoan: commVpbUpl / loanVpbUpl });
+
+            // 8. Thẻ VIB One Card (10 thẻ = 1 loan, 950k/thẻ)
+            const valVibCard = Math.max(0, Number(document.getElementById('in-vibcard').value) || 0);
+            const loanVibCard = valVibCard / 10;
+            const commVibCard = valVibCard * 950000;
+            document.getElementById('loan-vibcard').textContent = loanVibCard.toFixed(1) + ' Loan';
+            document.getElementById('comm-vibcard').textContent = formatVND(commVibCard);
+            if (loanVibCard > 0) items.push({ name: 'Thẻ VIB', loans: loanVibCard, comm: commVibCard, commPerLoan: commVibCard / loanVibCard });
+
+            // 9. Thẻ VPBank / Cathay (10 thẻ = 1 loan, 355k/thẻ)
+            const valVpbCard = Math.max(0, Number(document.getElementById('in-vpbcard').value) || 0);
+            const loanVpbCard = valVpbCard / 10;
+            const commVpbCard = valVpbCard * 355000;
+            document.getElementById('loan-vpbcard').textContent = loanVpbCard.toFixed(1) + ' Loan';
+            document.getElementById('comm-vpbcard').textContent = formatVND(commVpbCard);
+            if (loanVpbCard > 0) items.push({ name: 'Thẻ VPB/Cathay', loans: loanVpbCard, comm: commVpbCard, commPerLoan: commVpbCard / loanVpbCard });
+
+            return items;
+        }
+
+        function computeModeIncome(mode, items, totalLoans, rawTotalComm, hasSeniority) {
+            if (mode === 'ctv') {
+                return {
+                    base: 0,
+                    comm: rawTotalComm,
+                    seniority: 0,
+                    total: rawTotalComm,
+                    explanation: `<strong>Chế độ CTV (Chưa ký HĐLĐ):</strong> Chưa có lương cơ bản. Bạn nhận <strong>100% hoa hồng (${formatVND(rawTotalComm)})</strong> ngay sau khi giải ngân. ` +
+                                 (totalLoans >= 6 ? `Với <strong>${totalLoans.toFixed(1)} Loan</strong>, bạn đã <strong>đủ điều kiện xét ký HĐLĐ Lương CB 8.000.000đ</strong>!` : `Cần thêm <strong>${(6 - totalLoans).toFixed(1)} Loan</strong> nữa để đủ 6 Loan xét ký HĐLĐ.`)
+                };
+            } else {
+                const seniority = (hasSeniority && totalLoans >= 4) ? 2000000 : 0;
+                if (totalLoans < 4) {
+                    return {
+                        base: 0,
+                        comm: rawTotalComm,
+                        seniority: 0,
+                        total: rawTotalComm,
+                        explanation: `<strong>Chế độ HĐLĐ (Dưới 4 Loan):</strong> Đạt ${totalLoans.toFixed(1)} Loan (< 4 Loan) nên bị cắt chế độ lương cơ bản HĐLĐ, chỉ nhận hoa hồng thực tế (${formatVND(rawTotalComm)}).`
+                    };
+                } else if (totalLoans < 6) {
+                    const base70 = 8000000 * 0.7;
+                    return {
+                        base: base70,
+                        comm: 0,
+                        seniority: seniority,
+                        total: base70 + seniority,
+                        explanation: `<strong>Chế độ HĐLĐ (Từ 4 đến dưới 6 Loan):</strong> Nhận trước <strong>70% Lương cơ bản (5.600.000đ)</strong>, không phát sinh hoa hồng vượt. 30% lương CB còn lại (2.400.000đ) sẽ nhận ở tháng sau khi chạy bù đủ Loan.`
+                    };
+                } else if (Math.abs(totalLoans - 6) < 0.001) {
+                    return {
+                        base: 8000000,
+                        comm: 0,
+                        seniority: seniority,
+                        total: 8000000 + seniority,
+                        explanation: `<strong>Chế độ HĐLĐ (Đạt đúng 6 Loan định mức):</strong> Toàn bộ 6 Loan được tính vào định mức hưởng <strong>Lương cơ bản 8.000.000đ</strong> (không phát sinh thêm hoa hồng vượt).`
+                    };
+                } else {
+                    let quotaRemaining = 6.0;
+                    let excessComm = 0;
+                    let usedForQuota = [];
+                    let excessDetails = [];
+
+                    for (const it of items) {
+                        if (quotaRemaining >= it.loans) {
+                            quotaRemaining -= it.loans;
+                            usedForQuota.push(`${it.loans.toFixed(1)} Loan ${it.name}`);
+                        } else if (quotaRemaining > 0) {
+                            const used = quotaRemaining;
+                            const left = it.loans - used;
+                            usedForQuota.push(`${used.toFixed(1)} Loan ${it.name}`);
+                            const c = left * it.commPerLoan;
+                            excessComm += c;
+                            excessDetails.push(`${left.toFixed(1)} Loan ${it.name} (${formatVND(c)})`);
+                            quotaRemaining = 0;
+                        } else {
+                            excessComm += it.comm;
+                            excessDetails.push(`${it.loans.toFixed(1)} Loan ${it.name} (${formatVND(it.comm)})`);
+                        }
+                    }
+
+                    return {
+                        base: 8000000,
+                        comm: excessComm,
+                        seniority: seniority,
+                        total: 8000000 + excessComm + seniority,
+                        explanation: `<strong>Cách tính HĐLĐ (Vượt ${(totalLoans - 6).toFixed(1)} Loan):</strong><br>` +
+                                     `• <strong>6 Loan định mức đầu</strong> (${usedForQuota.join(' + ')}) = Hưởng <strong>Lương CB 8.000.000đ</strong>.<br>` +
+                                     `• <strong>Phần vượt ${(totalLoans - 6).toFixed(1)} Loan</strong> (${excessDetails.join(' + ')}) = Cộng thêm <strong>${formatVND(excessComm)}</strong> hoa hồng.`
+                    };
+                }
+            }
+        }
+
+        function calculateAll() {
+            const items = computeProjectBreakdown();
+            const totalLoans = items.reduce((acc, it) => acc + it.loans, 0);
+            const rawTotalComm = items.reduce((acc, it) => acc + it.comm, 0);
+            const hasSeniority = document.getElementById('chk-seniority').checked;
+
+            document.getElementById('total-loans-num').textContent = totalLoans.toFixed(1);
+
+            const statusBadge = document.getElementById('status-contract-badge');
+            if (totalLoans >= 15) {
+                statusBadge.textContent = "Đạt chuẩn HĐLĐ 8Tr & Tiêu chuẩn xét Quản lý (15+ Loan)";
+                statusBadge.className = "text-xs text-amber-400 font-bold mt-0.5";
+            } else if (totalLoans >= 6) {
+                statusBadge.textContent = "Đủ chuẩn xét ký / hưởng 100% HĐLĐ (>= 6 Loan)";
+                statusBadge.className = "text-xs text-emerald-400 font-bold mt-0.5";
+            } else if (totalLoans >= 4) {
+                statusBadge.textContent = "Đạt 4–5.9 Loan (Nhận 70% Lương CB nếu đã ký HĐLĐ)";
+                statusBadge.className = "text-xs text-sky-400 font-semibold mt-0.5";
+            } else {
+                statusBadge.textContent = `Cần thêm ${(6 - totalLoans).toFixed(1)} Loan để đạt mốc 6 Loan HĐLĐ`;
+                statusBadge.className = "text-xs text-red-400 font-semibold mt-0.5";
+            }
+
+            const res = computeModeIncome(currentMode, items, totalLoans, rawTotalComm, hasSeniority);
+            const otherMode = currentMode === 'ctv' ? 'hdld' : 'ctv';
+            const otherRes = computeModeIncome(otherMode, items, totalLoans, rawTotalComm, hasSeniority);
+
+            document.getElementById('out-base-salary').textContent = formatVND(res.base);
+            document.getElementById('out-commission').textContent = formatVND(res.comm);
+            document.getElementById('out-seniority').textContent = formatVND(res.seniority);
+            document.getElementById('out-total-income').textContent = formatVND(res.total);
+            document.getElementById('deduction-explanation').innerHTML = res.explanation;
+
+            if (currentMode === 'ctv') {
+                document.getElementById('note-base-salary').textContent = "Chưa ký HĐLĐ (0đ lương cứng)";
+                document.getElementById('label-comm-title').textContent = "2. Tổng Hoa Hồng (100%)";
+                document.getElementById('note-comm-detail').textContent = `Tính trên toàn bộ ${totalLoans.toFixed(1)} Loan`;
+                document.getElementById('mode-tag-label').textContent = "Chưa ký HĐLĐ (CTV)";
+                document.getElementById('perks-line').textContent = "Nhận hoa hồng ngay sau giải ngân • Đạt 6 Loan xét ký HĐLĐ.";
+                document.getElementById('compare-text').textContent = "Nếu đã ký HĐLĐ (Lương CB 8Tr):";
+                document.getElementById('compare-val').textContent = formatVND(otherRes.total) + " (Bấm xem)";
+            } else {
+                document.getElementById('note-base-salary').textContent = totalLoans >= 6 ? "Định mức 6 Loan đầu tiên" : "Theo tỷ lệ duy trì HĐLĐ";
+                document.getElementById('label-comm-title').textContent = "2. Hoa Hồng Các Loan Vượt";
+                document.getElementById('note-comm-detail').textContent = totalLoans > 6 ? `Tính cho ${(totalLoans - 6).toFixed(1)} Loan vượt định mức` : "Chưa vượt mốc 6 Loan (0đ)";
+                document.getElementById('mode-tag-label').textContent = "Đã ký HĐLĐ Chính Thức";
+                document.getElementById('perks-line').textContent = "Kèm BHXH 21.5%, Lương T13 (8Tr) & Miễn khấu trừ thuế TNCN.";
+                document.getElementById('compare-text').textContent = "Nếu đang là CTV (Chưa ký HĐLĐ):";
+                document.getElementById('compare-val').textContent = formatVND(otherRes.total) + " (Bấm xem)";
+            }
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('cand-name').value.trim();
+            const phone = document.getElementById('cand-phone').value.trim();
+            const location = document.getElementById('cand-location').value.trim();
+            const mode = document.getElementById('cand-mode').value;
+
+            const msg = `Chào ASM Phạm Trung Cần, tôi muốn đăng ký ứng tuyển nhánh taichinhh2:\n` +
+                        `• Họ và tên: ${name}\n` +
+                        `• SĐT/Zalo: ${phone}\n` +
+                        `• Khu vực: ${location}\n` +
+                        `• Hình thức: ${mode}`;
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(msg).catch(() => {});
+            }
+            const temp = document.createElement('textarea');
+            temp.value = msg;
+            document.body.appendChild(temp);
+            temp.select();
+            document.execCommand('copy');
+            document.body.removeChild(temp);
+
+            document.getElementById('modal-candidate-name').textContent = name;
+            document.getElementById('modal-msg-preview').innerHTML = `
+                <div><strong>Họ tên:</strong> ${name}</div>
+                <div><strong>SĐT/Zalo:</strong> ${phone}</div>
+                <div><strong>Khu vực:</strong> ${location}</div>
+                <div><strong>Hình thức:</strong> ${mode}</div>
+            `;
+            document.getElementById('success-modal').classList.remove('hidden');
+            document.getElementById('recruitment-form').reset();
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            calculateAll();
+        });
+    </script>
+</body>
+</html>
 
